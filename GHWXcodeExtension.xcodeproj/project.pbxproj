@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08030C9F2520771500670AE2 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08030C9B252076EA00670AE2 /* XcodeKit.framework */; };
+		08030CA02520771500670AE2 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08030C9B252076EA00670AE2 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ED6552302318F98E0036A04A /* GHWAddLazyCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65522C2318F98E0036A04A /* GHWAddLazyCodeManager.m */; };
 		ED6552372318FB180036A04A /* GHWInitViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6552362318FB180036A04A /* GHWInitViewManager.m */; };
 		ED65523A2318FBB70036A04A /* GHWSortImportManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6552392318FBB70036A04A /* GHWSortImportManager.m */; };
@@ -36,6 +38,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		08030CA12520771500670AE2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				08030CA02520771500670AE2 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EDA60A692317F43500B5FA3D /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,6 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		08030C9B252076EA00670AE2 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		ED65522A2318F98E0036A04A /* GHWExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWExtensionConst.h; sourceTree = "<group>"; };
 		ED65522C2318F98E0036A04A /* GHWAddLazyCodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHWAddLazyCodeManager.m; sourceTree = "<group>"; };
 		ED65522E2318F98E0036A04A /* GHWAddLazyCodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWAddLazyCodeManager.h; sourceTree = "<group>"; };
@@ -98,6 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDA60A592317F43500B5FA3D /* Cocoa.framework in Frameworks */,
+				08030C9F2520771500670AE2 /* XcodeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +184,7 @@
 		EDA60A572317F43500B5FA3D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				08030C9B252076EA00670AE2 /* XcodeKit.framework */,
 				EDA60A582317F43500B5FA3D /* Cocoa.framework */,
 			);
 			name = Frameworks;
@@ -252,6 +268,7 @@
 				EDA60A522317F43500B5FA3D /* Sources */,
 				EDA60A532317F43500B5FA3D /* Frameworks */,
 				EDA60A542317F43500B5FA3D /* Resources */,
+				08030CA12520771500670AE2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -484,13 +501,13 @@
 				CODE_SIGN_ENTITLEMENTS = GHWXcodeExtension/GHWXcodeExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2HMG43AYW9;
+				DEVELOPMENT_TEAM = C666769T5K;
 				INFOPLIST_FILE = GHWXcodeExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jingyao.GHWXcodeExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -509,7 +526,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jingyao.GHWXcodeExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -522,7 +539,7 @@
 				CODE_SIGN_ENTITLEMENTS = GHWExtension/GHWExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2HMG43AYW9;
+				DEVELOPMENT_TEAM = C666769T5K;
 				INFOPLIST_FILE = GHWExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -543,7 +560,7 @@
 				CODE_SIGN_ENTITLEMENTS = GHWExtension/GHWExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2HMG43AYW9;
+				DEVELOPMENT_TEAM = C666769T5K;
 				INFOPLIST_FILE = GHWExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

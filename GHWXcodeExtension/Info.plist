@@ -26,5 +26,7 @@
 	<string>Copyright © 2019 黑化肥发灰. All rights reserved.</string>
 	<key>NSMainStoryboardFile</key>
 	<string>Main</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
 </dict>
 </plist>
